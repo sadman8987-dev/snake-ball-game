@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#08111f"><title>Snake Ball — لعبة الثعبان</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+<header><div class="brand"><span class="logo">🐍</span><div><h1> SNAKE <b>BALL</b></h1><p>كل كورة بتكبرك… ومفيش Game Over!</p></div></div><button id="soundBtn" class="icon-btn" aria-label="الصوت">🔊</button></header>
+<section class="hud"><div class="stat"><small>النقاط</small><strong id="score">0</strong></div><div class="stat"><small>أفضل نتيجة</small><strong id="best">0</strong></div><div class="stat"><small>الطول</small><strong id="length">3</strong></div><div class="stat"><small>المستوى</small><strong id="level">1</strong></div></section>
+<section class="game-wrap"><canvas id="game" width="720" height="480" aria-label="ملعب لعبة الثعبان"></canvas><div id="overlay" class="overlay"><div class="card"><div class="big-emoji">🐍⚽</div><h2 id="overlayTitle">جاهز تلعب؟</h2><p id="overlayText">اجمع الكور وكبّر الثعبان. خبط الحيطان أو نفسك براحتك — مش هتموت!</p><button id="startBtn" class="primary">ابدأ اللعب</button></div></div></section>
+<div class="actions"><button id="pauseBtn" class="secondary">⏸ إيقاف مؤقت</button><button id="restartBtn" class="secondary">↻ إعادة اللعب</button></div>
+<section class="controls"><div class="dpad"><button data-dir="up" class="up">▲</button><button data-dir="left">◀</button><button data-dir="down">▼</button><button data-dir="right">▶</button></div><p>استخدم الأسهم أو WASD أو أزرار الاتجاهات للتحكم</p></section>
+<footer>مصممة للعب على الموبايل والكمبيوتر ✨</footer>
+</main><script src="script.js"></script>
+</body></html>
